@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>veryrandompng</title>
+        <style>
+            #start{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                animation-name: slide;
+                animation-duration: 1s;
+                text-align: center;
+            }
+
+            .starter{
+                max-width: 200px;
+                max-height: 200px;
+                margin-left: 635px;
+            }
+            #heading{
+                border: 1px soild #649185;
+                margin: 2px;
+            }
+
+            @keyframes slide{
+                from{transform: translateX(300%)}
+            }
+
+            @media screen and (max-width:600px){
+                body{
+                    width: 100%;
+                }
+            }
+            .starter{
+                border: 2px solid;
+            }
+            #img{
+                margin-left: 600px;
+            }
+            #javascript{
+                margin: auto;
+            }
+            #script{
+                margin: auto;
+            }
+            #head1{
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            #fun{
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--let me guess, you right clicked and press inspect, right? but anyway, hello :D-->
+        <h1 id="start">Welcome to my website!!</h1>
+        <div class="starter">
+            <h3 id="heading">i mainly use this is website to showcase my coding skills and put in random things! :D</h3>
+    </div>
+    <div class="websites">
+        <p>Recommemded Websites</p>
+        <a href="https://neal.fun">
+            <img src="Untitled5_20240703114639.png"> 
+        </a>
+
+        <a href="https://archive.org">
+            <img src="archive.png"> 
+        </a>
+    </div>
+    <img src="yay.png" alt="icon" width="300px" id="img">
+    <hr>
+    <h2 id="head1">Website Playground</h2>
+    <p id="fun">fun little things i coded :D</p>
+    <button onclick="doSomething()" id="javascript">click me</button>
+    <p id="script">???</p>
+    <script>
+        function doSomething(){
+           document.getElementById("script").innerHTML = "You clicked a button!"
+        }
+    </script>
+
+
+
+
+        
+    </body>
+</html>
